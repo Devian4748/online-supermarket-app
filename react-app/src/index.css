@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+:root {
+  --primary: #4caf50;
+  --secondary: #ffc107;
+  --light-gray: #dadce0;
+}
+
+[class^='ui-'] {
+  margin: 10px;
+}
+
+.ui-link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.ui-button {
+  background-color: var(--primary);
+  color: white;
+  border: 0;
+  padding: 1.5rem 2rem;
+  min-width: 15rem;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 200ms ease-out;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.ui-button:hover {
+  opacity: 0.8;
+}
+.ui-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.ui-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.ui-textfield {
+  padding: 1.2rem 1rem;
+  border-radius: 3px;
+  border: 1px solid var(--light-gray);
+  font-size: 1.6rem;
+}
