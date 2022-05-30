@@ -1,8 +1,13 @@
+import clsx from 'clsx';
+
 const Link = props => {
-  const { href } = props;
+  const { className, children, ...rest } = props;
+
+  const linkClasses = clsx('ui-link', className);
+
   return (
-    <a className='ui-link' href={href}>
-      {props.children}
+    <a className={linkClasses} {...rest}>
+      {children}
     </a>
   );
 };

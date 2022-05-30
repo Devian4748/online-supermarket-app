@@ -1,9 +1,13 @@
+import clsx from 'clsx';
+
 const Button = props => {
-  const { type, disabled } = props;
+  const { className, children, ...rest } = props;
+
+  const btnClasses = clsx('ui-button', className);
 
   return (
-    <button type={type} disabled={disabled} className='ui-button'>
-      {props.children}
+    <button className={btnClasses} {...rest}>
+      {children}
     </button>
   );
 };

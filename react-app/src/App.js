@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Link href='https://react-tutorial.app'>Shop online</Link>
-      <Button type='button' disabled={false}>
+      <Button className='btn-primary-color' type='button' disabled={false}>
         Button
       </Button>
       <Button type='button' disabled={true}>

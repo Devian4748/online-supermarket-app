@@ -1,14 +1,11 @@
-const Input = props => {
-  const { type = 'text', placeholder, name } = props;
+import clsx from 'clsx';
 
-  return (
-    <input
-      type={type}
-      placeholder={placeholder}
-      name={name}
-      className='ui-textfield'
-    />
-  );
+const Input = props => {
+  const { type = 'text', className, children, ...rest } = props;
+
+  const inputClasses = clsx('ui-textfield', className);
+
+  return <input {...rest} type={type} className={inputClasses} />;
 };
 
 export default Input;
